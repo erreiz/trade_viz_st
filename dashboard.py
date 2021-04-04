@@ -15,11 +15,15 @@ from utils import *
 def main():
 
 	st.set_page_config(layout="wide")
+	api_key = st.text_input("api key")
+	secret_key = st.text_input("secret key")
 
 	# ROW 1 ------------------------------------------------------------------------
 	col1, col2 = st.beta_columns([1,2])
 	col1.image('https://cdn.futura-sciences.com/buildsv6/images/wide1920/4/1/d/41d6867f78_50171855_bitcoin.jpg',width=300)
 	col2.title("Welcome to the Crypto Trader Dashboard")
+	st.text(api_key)
+	st.text(secret_key)
 
 
 	# ROW 2 ------------------------------------------------------------------------
